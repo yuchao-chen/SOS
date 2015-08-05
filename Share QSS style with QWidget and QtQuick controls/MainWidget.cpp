@@ -7,7 +7,7 @@
 MainWidget::MainWidget (QWidget * parent)
             : QWidget (parent)
 {
-    setWindowTitle (tr ("QWidget and Quck common style") );
+    setWindowTitle (tr ("QWidget and QtQuick common QSS") );
 
     QtWidget    * qtWidget    = new QtWidget    (this);
     QuickWidget * quickWidget = new QuickWidget (this);

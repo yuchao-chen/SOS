@@ -2,8 +2,9 @@
 #include <QQuickView>
 #include <QVBoxLayout>
 
-QuickWidget::QuickWidget (QWidget * parent) : QWidget (parent)
+QuickWidget::QuickWidget (QWidget * parent) : QGroupBox (parent)
 {
+    setTitle ("QtQuick");
     QQuickView * view = new QQuickView ();
     view->setSource (QUrl ("qrc:///widget.qml") );
     view->setResizeMode (QQuickView::SizeRootObjectToView);

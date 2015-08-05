@@ -1,9 +1,9 @@
 #ifndef QQCS_QTWIDGET_H
 #define QQCS_QTWIDGET_H
 
-#include <QWidget>
+#include <QGroupBox>
 
-class QtWidget : public QWidget
+class QtWidget : public QGroupBox
 {
 Q_OBJECT
 public:

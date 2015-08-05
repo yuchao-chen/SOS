@@ -10,7 +10,7 @@ Rectangle {
             Layout.fillWidth:  true
             Layout.fillHeight: true
             ComboBox {
-                model: ["Red", "Green", "Blue"]
+                model: ["Apple", "Orange", "Nut"]
                 id: comboColors
                 anchors.centerIn: parent
             }
