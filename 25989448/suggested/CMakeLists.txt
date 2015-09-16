@@ -19,8 +19,7 @@ add_library (MyProjectLib SHARED
     ${MyProjectLib_hdr_moc}
     ${MyProjectLib_ui_moc}
 )
+target_link_libraries (MyProjectLib Qt5::Widgets)
 
 add_executable(MyProject ${MyProjectBin_src})
 target_link_libraries (MyProject MyProjectLib)
-
-qt5_use_modules(MyProjectLib Core Gui Widgets)
