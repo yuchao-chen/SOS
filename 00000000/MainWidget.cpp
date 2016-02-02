@@ -1,6 +1,5 @@
 #include "MainWidget.h"
 #include <QSpinBox>
-#include <QDoubleSpinBox>
 #include <QFormLayout>
 
 
@@ -9,10 +8,10 @@ MainWidget::MainWidget (QWidget * parent)
 {
     setWindowTitle (tr ("Qt StyleSheet issue") );
 
-    QSpinBox * spinBox = new QSpinBox (this);
-    QDoubleSpinBox * doubleSpinBox = new QDoubleSpinBox (this);
+    QSpinBox * spinFirst  = new QSpinBox (this);
+    QSpinBox * spinSecond = new QSpinBox (this);
     QFormLayout * layoutTop   = new QFormLayout ();
-    layoutTop->addRow (tr ("QSpinBox"), spinBox);
-    layoutTop->addRow (tr ("QDoubleSpinBox"), doubleSpinBox);
+    layoutTop->addRow (tr ("First"),  spinFirst);
+    layoutTop->addRow (tr ("Second"), spinSecond);
     this->setLayout (layoutTop);
 }
