@@ -1,0 +1,7 @@
+QDoubleSpinBox:focus
+{
+    border-width: 2px;
+    border-style: solid;
+    border-color: green;
+}
+
